@@ -1,7 +1,4 @@
-require 'date'
 require 'google_drive'
-require 'json'
-require 'open-uri'
 
 # rubocop:disable Metrics/BlockLength
 class PullDatabase
