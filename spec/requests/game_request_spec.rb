@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Games', type: :request do
+
   it 'returns a successful response for the index page' do
     get games_path
     expect(response).to be_successful
@@ -21,5 +22,13 @@ RSpec.describe 'Games', type: :request do
 
     get edit_game_path(game.id)
     expect(response).to be_successful
+
+  describe 'GET /games' do
+    it "includes the game" do
+      game = create(:game, game_name: 'Game 1')
+      get games_path
+      expect(body).to include('Game 1')
+    end
+
   end
 end

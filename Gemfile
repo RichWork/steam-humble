@@ -19,8 +19,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'inflector'
 gem 'date'
+gem 'inflector'
 gem 'google_drive'
 gem 'json'
 gem 'open-uri'
@@ -34,6 +34,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'capybara', '>= 2.15'
+  gem 'factory_bot_rails'
+  gem 'launchy'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
