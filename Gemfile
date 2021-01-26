@@ -55,12 +55,15 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+<<<<<<< HEAD
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
+=======
+>>>>>>> 4da2eaef45ed0ef187f7c20ba8441e5567906eda
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
