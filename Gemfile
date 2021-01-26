@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby File.read('.ruby-version').strip
+ruby '2.7.1' #File.read('.ruby-version').strip
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
@@ -34,14 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '>= 2.15'
-  gem 'factory_bot_rails'
   gem 'launchy'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails'
-  gem 'rubocop'
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
 end
 
 group :development do
@@ -55,15 +48,12 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-<<<<<<< HEAD
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
-=======
->>>>>>> 4da2eaef45ed0ef187f7c20ba8441e5567906eda
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
